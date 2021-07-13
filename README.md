@@ -14,5 +14,6 @@ Key concepts covered in the project include
 - Creation of model templates using `sequelize init`
 - Link server to MySql db by editing config files
 - Using sequelize to create and update tables
-- Routing using express
+- Routing using express and react-router-dom
+- Form creation using Formik and validation using Yup
 
