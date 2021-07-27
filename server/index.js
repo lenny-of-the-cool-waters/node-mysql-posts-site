@@ -8,7 +8,6 @@ app.use(cors());    // Middleware to enable api requests form same origin
 
 // Routers
 const postRouter = require('./routes/Posts');
-
 app.use('/posts', postRouter);
 
 // Importing Models and Creating tables

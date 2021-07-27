@@ -3,9 +3,15 @@ const router = express.Router();
 const { Posts } = require('../models');
 
 router.get('/', async(req,res) => {
-    const postList = await Posts.findAll();
-    res.json(postList);
+    const postsList = await Posts.findAll();
+    res.json(postsList);
 
+});
+
+router.get("/byId/:id", async(req, res) => {
+    const id = req.params.id;
+    const post = await Posts.findByPk(id);
+    res.json(post);
 });
 
 router.post('/', async(req,res) => {
