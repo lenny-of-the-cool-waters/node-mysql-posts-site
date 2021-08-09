@@ -23,7 +23,13 @@ const Post = () => {
           <div className="footer">{postObject.username}</div>
         </div>
       </div>
-      <div className="rightSide">Comment Section</div>
+      <div className="rightSide">
+        <div className="addCommentContainer">
+          <input type="text" placeholder="Add new Comment" autoComplete="off" />
+          <button type="submit"></button>
+        </div>
+        <div className="listOfComments"></div>
+      </div>
     </div>
   );
 };
