@@ -15,10 +15,11 @@ const CreatePost = () => {
     username: Yup.string().min(3).max(15).required(),
   });
 
-  const onSubmit = (data) => {
+  const onSubmit = (data, {resetForm}) => {
     axios.post('http://localhost:5000/posts', data).then(() => {
         console.log("Database updated")
     })
+    resetForm();
   };
 
   return (

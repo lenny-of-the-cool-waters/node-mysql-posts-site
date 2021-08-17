@@ -11,6 +11,8 @@ const postRouter = require('./routes/Posts');
 app.use('/posts', postRouter);
 const commentRouter = require('./routes/Comments');
 app.use('/comments', commentRouter);
+const usersRouter = require('./routes/Users');
+app.use('/auth', usersRouter);
 
 // Importing Models and Creating tables
 const db = require('./models');
