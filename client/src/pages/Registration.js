@@ -40,6 +40,7 @@ const Registration = () => {
           <label htmlFor="password">Password</label>
           <ErrorMessage name="password" component="span" />
           <Field
+            type="password"
             id="inputCreatePost"
             name="password"
             placeholder="Password"
